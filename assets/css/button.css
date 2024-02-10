@@ -1,0 +1,15 @@
+[class^="btn-"]{
+    display: flex;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+
+
+    &.btn-blue{
+        background-color: var(--blue-color);
+        color: var(--white-color);
+        padding: 12px 28px;
+    }
+}
