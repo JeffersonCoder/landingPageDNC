@@ -1,0 +1,26 @@
+#video-info{
+    padding: 50px 0;
+    >div{
+        display: flex;
+        gap: 40px;
+
+        .video-info-text{
+            max-width: 496px;
+
+            h1{
+                color: var(--blue-color);
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 48px;
+            }
+
+            p{
+                color: var(----darkgray-color);
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+
+    }
+}
