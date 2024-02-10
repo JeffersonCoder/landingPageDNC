@@ -1,0 +1,22 @@
+#course-info{
+    background-color: var(--lightgray-color);
+
+    div{
+        display: flex;
+        justify-content: space-between;
+        height: 170px;
+
+        article{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--darkblue-color);
+            font-size: 20px;
+            font-weight: 400;
+
+            img{
+                width: 40px;
+            }
+        }
+    }
+}
