@@ -1,0 +1,32 @@
+#form {
+    margin-bottom: 100px;
+
+    h1 {
+        color: var(--darkgray-color);
+        text-align: center;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        max-width: 413px;
+        margin: 0 auto;
+
+        input{
+            height: 53px;
+            border: none;
+            outline: none;
+            border-radius: 8px;
+            margin: 10px 0;
+            padding-left: 10px;
+            background-color: var( --lightgray-color);
+        }
+
+        button{
+            margin-top: 20px;
+        }
+    }
+}
