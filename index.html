@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 
-    <title>Document</title>
+    <title>Landing Page DNC</title>
 </head>
 
 <body>
@@ -48,10 +49,10 @@
         <section id="video-info">
             <div class="container">
                 <div>
-                    <iframe width="534" height="315" src="https://www.youtube.com/embed/fbiod36QJtI?si=VbkaKAfwrf7kXpjs"
+                    <!-- <iframe width="534" height="315" src="https://www.youtube.com/embed/fbiod36QJtI?si=VbkaKAfwrf7kXpjs"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
+                        allowfullscreen></iframe> -->
                 </div>
                 <div class="video-info-text">
                     <header>
@@ -69,68 +70,67 @@
                 <header>
                     <h1>Mais de 500 alunos já iniciaram seus estudos</h1>
                 </header>
-                <div class="card-container">
-
-                    <img data-js="previousButton" src="assets/img/navigate-prev.png" alt="previous">
-
-                    <div class="cards">
-                        <div data-js="carousel-card" class="card invisible visible">
-                            <img src="assets/img/bruna.png" alt="foto Bruna">
-                            <div>
-                                <p>“O curso da DNC School foi o ponto de partida da minha transição de carreira. Hoje já
-                                    consegui minha primeira vaga na área!”</p>
-                                <p>Bruna, desenvolvedora Front-End</p>
+                <div class="slide-container swiper">
+                    <div class="slide-content">
+                        <div class="card-wrapper swiper-wrapper">
+                            <div class="card swiper-slide">
+                                <img src="assets/img/bruna.png" alt="Esquilo" class="card-img">
+                                <div class="card-content">
+                                    <p class="comment">“O curso da DNC School foi o ponto de partida da minha transição
+                                        de carreira.
+                                        Hoje já consegui minha primeira vaga na área!”</p>
+                                    <p class="student">Bruna, desenvolvedora Front-End</p>
+                                </div>
                             </div>
-                        </div>
 
-                        <div data-js="carousel-card" class="card invisible visible">
-                            <img src="assets/img/leonardo.png" alt="foto Leonardo">
-                            <div>
-                                <p>“Gostei muito da metodologia e da plataforma da Escola DNC. Os materiais são todos
-                                    muito
-                                    bons”</p>
-                                <p>Leonardo, desenvolvedor Back-End</p>
+                            <div class="card swiper-slide">
+                                <img src="assets/img/leonardo.png" alt="Esquilo" class="card-img">
+                                <div class="card-content">
+                                    <p class="comment">“Gostei muito da metodologia e da plataforma da Escola DNC. Os
+                                        materiais são todos muito bons”</p>
+                                    <p class="student">Leonardo, desenvolvedor Back-End</p>
+                                </div>
                             </div>
-                        </div>
 
-                        <div data-js="carousel-card" class="card invisible ">
-                            <img src="assets/img/samantha.png" alt="foto Samantha">
-                            <div>
-                                <p>“O curso da foi a mudança que eu precisava para alcançar meus objetivos
-                                    profissionais”</p>
-                                <p>Samantha, desenvolvedora Front-End</p>
+                            <div class="card swiper-slide">
+                                <img src="assets/img/samantha.png" alt="Esquilo" class="card-img">
+                                <div class="card-content">
+                                    <p class="comment">“O curso da foi a mudança que eu precisava para alcançar meus
+                                        objetivos profissionais”</p>
+                                    <p class="student">Samantha, desenvolvedora Front-End</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <img data-js="nextButton" src="assets/img/navigate-next.png" alt="next">
-
+                    <div class="swiper-button-next swiper-navBtn"></div>
+                    <div class="swiper-button-prev swiper-navBtn"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
-            </div>
-
-
-
         </section>
 
         <section id="form">
             <div class="container">
                 <h1>Comece agora mesmo e dê o próximo passo da sua carreira</h1>
 
-                <form action="https://api.sheetmonkey.io/form/3D2ye2KftDc4P5AKYcF4qw" method="post">
+                <form action="https://api.sheetmonkey.io/form/3D2ye2KftDc4P5AKYcF4qw" method="post" target="_blank">
                     <input type="text" name="Name" placeholder="Nome" required>
                     <input type="email" name="Email" placeholder="E-mail" required>
                     <input type="number" name="Phone" placeholder="Telefone" name="phone" id="phone" required>
                     <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
-                    <button class="btn-blue" type="submit">Acesse a ementa grátis</button>
-
+                    <button class="btn-blue" data-js="buttonSubmit" type="submit">Acesse a ementa grátis</button>
                 </form>
 
             </div>
         </section>
     </main>
 
+
+    <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
+
+
+
 
 </html>

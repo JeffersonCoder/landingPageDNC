@@ -13,10 +13,18 @@
             color: var(--darkblue-color);
             font-size: 20px;
             font-weight: 400;
+            margin: 0 auto;
 
             img{
                 width: 40px;
             }
+        }
+    }
+    
+    @media (max-width: 992px) {
+        div{
+            flex-direction: column;
+            height: auto;
         }
     }
 }

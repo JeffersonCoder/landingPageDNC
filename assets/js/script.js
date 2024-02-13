@@ -1,40 +1,31 @@
-const slides = document.querySelectorAll('[data-js="carousel-card"]')
-const prevButton = document.querySelector('[data-js="previousButton"]')
-const nextButton = document.querySelector('[data-js="nextButton"]')
 
-let currentSlideIndex = 0
-let currentSlideIndexTwo = 1
+var swiper = new Swiper(".slide-content", {
+  slidesPerView: 3,
+  spaceBetween: 25,
+  loop: true,
+  centerSlide: 'true',
+  fade: 'true',
+  grabCursor: 'true',
 
+  // pagination: {
+  //   el: ".swiper-pagination",
+  //   clickable: true,
+  //   dynamicBullets: true,
+  // },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 
-nextButton.addEventListener('click', () => {
-  
-  if (currentSlideIndexTwo === slides.length - 1) {
-    currentSlideIndex = -1
-    currentSlideIndexTwo = 0
+  breakpoints:{
+      0: {
+          slidesPerView: 1,
+      },
+      520: {
+          slidesPerView: 2,
+      },
+      992: {
+          slidesPerView: 2,
+      },
   }
-  
-  ++currentSlideIndex
-  ++currentSlideIndexTwo
-
-  slides.forEach(slide => slide.classList.remove('visible'))
-  slides[currentSlideIndex].classList.add('visible')
-  slides[currentSlideIndexTwo].classList.add('visible')
-})
-
-
-prevButton.addEventListener('click', () => {
-  
-  if (currentSlideIndex === 0) {
-    currentSlideIndex = slides.length - 1
-    currentSlideIndexTwo = slides.length
-  }
-  
-  --currentSlideIndex
-  --currentSlideIndexTwo
-
-  slides.forEach(slide => slide.classList.remove('visible'))
-  slides[currentSlideIndex].classList.add('visible')
-  slides[currentSlideIndexTwo].classList.add('visible')
-})
-
-console.log(slides.length)
+});
